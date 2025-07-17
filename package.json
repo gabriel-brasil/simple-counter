@@ -1,0 +1,14 @@
+{
+  "name": "simple-counter",
+  "author": "Gabriel Brasil",
+  "version": "1.0.0",
+  "description": "A basic counter made with vanilla JavaScript.",
+  "main": "script.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

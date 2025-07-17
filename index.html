@@ -3,20 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contador</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>D4 Cow Counter</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parastoo:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main id="main">
-      <div id="display"></div>
-      <div class="btn-wrapper">
-        <button id="subtract">-1</button>
-        <button id="add">+1</button>
+    <main class="main">
+      <div class="container">
+        <h1 id="mainTitle" class="title">D4 Cow Counter</h1>
+
+        <div id="displayCounter" class="display"></div>
+
+        <div class="progress-bar">
+          <div class="wrapper">
+            <div id="progressBar" class="progress"></div>
+            <div id="progressPercent" class="percent"></div>
+          </div>
+          <span class="goal">666</span>
+        </div>
+
+        <div id="buttonsWrapper" class="btn-wrapper"></div>
+
+        <div class="help-text">
+          <p>Left-click to increment by the button's number</p>
+          <p>Right-click to decrement by the button's number</p>
+        </div>
+
+        <button class="reset-btn" onclick="resetCounter(event)">
+          reset counter
+        </button>
       </div>
-      <button id="reset">reset</button>
-      <div id="feedback"></div>
+
+      <div id="feedbackMessage" class="feedback-message"></div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="dist/script.js"></script>
   </body>
 </html>
