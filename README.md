@@ -1,2 +1,2 @@
 # simple-counter
-A basic counter made with vanilla JavaScript.
+A D4 Cow Counter made with HTML, CSS and vanilla JavaScript.
